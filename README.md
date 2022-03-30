@@ -2,12 +2,6 @@
 
 -   PHP 8.0 or higher
 
-## Installation
-
-```
-composer install
-```
-
 ## Routing
 
 Hook **routes** (a combination of one or more HTTP methods and a pattern) using `$router->match(method(s), pattern, function)`:
