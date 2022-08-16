@@ -1,0 +1,19 @@
+<script>
+  var myHeaders = new Headers();
+myHeaders.append("Referer", "https://www.webtoons.com/en/sports/wind-breaker/part-4-ep13/viewer?title_no=372&episode_no=391&fbclid=IwAR1e8_xKZvQuCZA3rQt2ChxHe8KETQFvdyjXnMclQHeXzpBpH35zd4toXoI");
+
+var requestOptions = {
+  method: 'GET',
+  headers: myHeaders,
+  redirect: 'follow'
+};
+
+fetch("https://webtoon-phinf.pstatic.net/20220704_230/1656862726122wpmYz_JPEG/16568627261143723918.jpg?type=q90", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+</script>
+
+<body>
+  <h1>Welcome</h1>
+</body>
